@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Main content area -->
+  <main>
+    <!-- Game board section with a 3x3 grid and scoreboard -->
+    <section id="game-board">
+      <h1>Tic-Tac-Toe</h1>
+      <div class="grid">
+        <!-- Each cell represents a spot on the Tic-Tac-Toe board -->
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+      </div>
+      <!-- Scoreboard displaying scores for both players and draws -->
+      <div class="scoreboard">
+        <div>Player X: <span id="playerX-score">0</span></div>
+        <div>Player O: <span id="playerO-score">0</span></div>
+        <div>Draws: <span id="draws-score">0</span></div>
+      </div>
+      <!-- Button to reset the game -->
+      <button id="reset-game">Reset Game</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
